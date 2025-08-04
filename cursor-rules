@@ -1,0 +1,57 @@
+# General Coding Rules
+
+- Don't include comments in your code
+- Don't run anything in the terminal
+- Don't install packages or dependencies
+- All code should be written cleanly and concisely
+
+# Project Stack
+
+- Use Next.js with App Router
+- Use TypeScript for all code
+- Use Tailwind CSS for styling
+- Use only functional components
+- Use React Server Components by default
+- Use 'use client' only when absolutely necessary
+
+# TypeScript Rules
+
+- Avoid using the `any` type
+- Explicitly type all function parameters and return types
+- Use interfaces for object forms instead of types
+- Use union types instead of enumerations when applicable
+- Avoid type assertions (as) unless strictly necessary
+
+# React Rules
+
+- Prefer React hooks (`useState`, `useEffect`, etc.)
+- Don't use class components
+- Use the Context API for shared state when necessary
+- Use `useEffect` Responsibly, avoiding unnecessary side effects
+
+# Tailwind CSS Rules
+
+- Use only utility classes
+- Don't write custom CSS unless absolutely necessary
+- Prefer semantic HTML elements (e.g., `<button>`, `<section>`)
+
+# File and Folder Organization
+
+- All components should be in the `/components` directory
+- All routes/pages should be in the `/app` directory
+- Use PascalCase for component files and folders
+- Don't mix server and client logic in the same file
+
+# API and Data
+
+- Use async/await for all asynchronous operations
+- Fetch data using native `fetch()` or libraries already in the project
+- Don't include mock data or sample payloads unless explicitly requested
+
+# Commit Message Rules
+
+- Always prefix commit messages with a conventional commit type: feat, fix, chore, docs, refactor, style, test.
+- Use the format: `<type>: <short description>`
+- The type must be one of: feat, fix, chore, docs, refactor, style, test.
+- The scope should be the folder or component affected (optional).
+- The description should be written in imperative present tense (e.g., "add new button", not "added" or "adds").
